@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <base href="/">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/promote/result.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Allura&family=Inter:wght@400;500;600&family=Italianno&family=Josefin+Sans:wght@100;200;300;400;500&family=Kaushan+Script&family=Lato&family=Lora:ital,wght@1,400;1,500;1,600&family=Montserrat&family=Philosopher&family=Roboto&family=Solitreo&family=Space+Grotesk:wght@300&family=Varela&family=Varela+Round&family=Yellowtail&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">  
+      <title>Result</title>
+      </head>
+<body>
+    <main>
+        <!-- <section class="topSectionResults">
+            <h1>Search results</h1>
+        </section> -->
+        <section class="midSectionResults">
+            <img src="/promote/public/manhello.png" alt="" id="manHello">
+            <img src="/promote/public/wrong.png" alt="" id="wrong">
+            <img src="/promote/public/clap.png" alt="" id="clap">
+        </section>
+        <section class="bottomSectionResults">
+            <h2>We have found <span id="randomResults"></span> listings within <span id="searchArea"></span></h2>
+            <h3>Enquire below to be added to the waiting list</h3>
+            <form>
+                <label for="name" id="fullNameLabel">Full Name</label>
+                <input type="text" id="enquireName">
+                <label for="name" id="companyNameLabel">Company Name</label>
+                <input type="text" id="enquireCompanyName">
+                <label for="name" id="locationLabel">Location</label>
+                <input type="text" id="enquireLocation">
+                <label for="" id="sectorLabel">Sector</label>
+                <select name="sector" id="enquireSector">
+                    <option hidden value=""></option>
+                    <option value="aerospace">Aerospace</option>
+                    <option value="automotive">Automotive</option>
+                    <option value="banking">Banking</option>
+                    <option value="beverages">Beverages</option>
+                    <option value="brokerage">Brokerage Serices</option>
+                    <option value="construction">Construction</option>
+                    <option value="Electricity">Electricity</option>
+                    <option value="finance">Finance</option>
+                    <option value="food">Food</option>
+                    <option value="gas">Gas and Water</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="industrial">Industrial</option>
+                    <option value="insurance">Insurance</option>
+                    <option value="media">Media</option>
+                    <option value="medical">Medical</option>
+                    <option value="realEstate">Real Estate</option>
+                    <option value="software">Software and Computing</option>
+                    <option value="telecommunications">Telecommunications</option>
+                    <option value="travel">Travel</option>
+                </select>
+                <button id="enquireSubmit">Submit</button>
+            </form>
+            <p id="resultMessage"></p>
+        </section>
+    </main>
+</body>
+<script src="/promote/results.js"></script>
+</html>

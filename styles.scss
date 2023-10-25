@@ -1,0 +1,316 @@
+@use './colours' as c;
+@use './fonts' as f;
+@use './mixins' as mix;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round';
+}
+
+main {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-image: linear-gradient(to right, rgb(47, 130, 193), rgb(47, 130, 219));
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 10px;
+        color: white;
+        gap: 20px;
+        list-style-type: none;
+        font-size: 18px;
+        height: 3vh;
+    }
+}
+
+a, a:visited, a:focus {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+a:hover {
+    color: rgb(233, 232, 232);
+}
+
+.bar {
+    width: 25px; /* Adjust the width of each bar */
+    height: 3px; /* Adjust the height of each bar */
+    background-color: #333; /* Set the color of each bar */
+    margin: 4px 0; /* Add spacing between bars */
+}
+
+
+.topSection {
+    display: flex;
+    justify-content: space-around;
+    // flex-wrap: wrap;
+    min-height: 50vh;
+    position: relative;
+    background-image: linear-gradient(to right, rgb(47, 130, 193), rgb(47, 130, 219));
+    h1 {
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 44px;
+    }
+    .rocketPic {
+        height: 250px;
+        z-index: 20;
+        position: relative;
+        top: 200px;
+    }
+}
+
+.promoteBusiness {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+    width: 400px;
+    color: white;
+}
+
+.promoteBusinessForm {
+    display: flex;
+    border: none;
+    select {
+        width: 200px;
+        text-align: center;
+        outline: none;
+        cursor: pointer;
+    }
+    button {
+        color: white;
+        background-color: rgb(73, 162, 94);
+        border-radius: 3px;
+        padding: 5px;
+        width: 120px;
+        font-weight: bold;
+        border: 1px solid rgb(62, 164, 243);
+        cursor: pointer;
+        &:hover {
+            background-color: rgb(114, 174, 128);
+
+        }
+    }
+}
+
+.menu {
+    display: none;
+}
+
+.bottomSection {
+    // display: flex;
+    flex-wrap: wrap;
+    height: 47vh;
+    background-color: rgb(236, 236, 237);
+    h1 {
+        text-align: center; 
+        color: rgb(47, 130, 193);
+    }
+    
+    div {
+        height: 150px;
+        width: 150px;
+        box-shadow: 2px 2px 4px 2px gray;
+        border-radius: 9999px;
+        background-color: white;
+        color: rgb(47, 130, 193);
+        &:hover {
+            cursor: pointer;
+            color: rgb(102, 158, 201);
+        }
+    }
+
+}
+
+.bottomSectionDivs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-top: 50px;
+    div {
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        text-align: center;
+        p {
+            margin-top: 20px;
+            font-weight: 600;
+            color: rgb(47, 130, 193);
+            font-weight: bold;
+        }
+    }
+}
+
+.lastSection {
+    background-color: rgb(74, 174, 251);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    p {
+        z-index: 40;
+    }
+    img {
+        height: 250px;
+        margin-top: 20px;
+    }
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        color: white;
+        div {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            h1 {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+
+
+.finalSection {
+    background-color: white;
+    div {
+        margin-top: 20px;
+        h2 {
+            text-align: center;
+        }
+    }
+}
+
+.rocketPic.rocketFly {
+    transform: translateY(-500px) rotate(-45deg);
+    transition: transform 1s ease-in;
+}
+
+.rocketPic.rocketDown {
+    transform: translateY(0px) rotate(0);
+    transition: transform 1s ease-in;
+}
+
+.custom-shape-divider-bottom-1693391483 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1693391483 svg {
+    position: relative;
+    display: block;
+    width: calc(126% + 1.3px);
+    height: 76px;
+}
+
+.custom-shape-divider-bottom-1693391483 .shape-fill {
+    fill: rgb(236, 236, 237);
+}
+
+.custom-shape-divider-bottom-1693481447 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1693481447 svg {
+    position: relative;
+    display: block;
+    width: calc(112% + 1.3px);
+    height: 57px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1693481447 .shape-fill {
+    fill: #FFFFFF;
+}
+  
+  @media screen and (max-width: 940px) {
+    .bottomSection div {
+        height: 100px;
+        width: 100px;
+    }
+    nav {
+        margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+}
+  
+  @media screen and (max-width: 720px) {
+    .bottomSection div {
+        height: 80px;
+        width: 80px;
+    }
+    .promoteBusiness {
+        font-size: 10px;
+        width: 200px;
+    }
+  }
+
+  @media screen and (max-width: 580px) {
+    .topSection h1 {
+        font-size: 30px;
+    }
+    .bottomSection div {
+        height: 70px;
+        width: 70px;
+        font-size: 14px;
+    }
+    .topSection img.rocketPic {
+        // height: 140px;
+    }
+    .lastSection img {
+        height: 150px;
+    }
+    .lastSection div {
+        width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 410px) {
+    .topSection {
+        flex-wrap: wrap;
+    }
+    .topSection img.rocketPic {
+        top: 30px;
+    }
+    main {
+        ul {
+            justify-content: center;
+        }
+    }
+  }
+  
+  
+  
+  /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Varela Round";
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 100vh;
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(to right, rgb(47, 130, 193), rgb(47, 130, 219));
+}
+
+a, a:visited, a:focus {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+a:hover {
+  color: rgb(233, 232, 232);
+}
+
+#backButton {
+  background-color: red;
+}
+
+.midSectionResults {
+  display: flex;
+  flex: 1;
+}
+.midSectionResults img {
+  margin: auto;
+  height: 50%;
+}
+.midSectionResults #wrong, .midSectionResults #clap {
+  display: none;
+}
+
+.bottomSectionResults {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+}
+.bottomSectionResults p {
+  margin-top: 10px;
+  color: white;
+  font-weight: 500;
+}
+.bottomSectionResults h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.bottomSectionResults form {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.bottomSectionResults input, .bottomSectionResults select {
+  outline: none;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  border: none;
+  padding: 8px;
+}
+.bottomSectionResults button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgb(51, 195, 51);
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.bottomSectionResults button:hover {
+  background-color: rgb(125, 211, 125);
+}
+
+h1 {
+  text-align: center;
+}
+
+@media screen and (max-width: 940px) {
+  main {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=result.css.map */

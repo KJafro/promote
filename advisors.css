@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Varela Round";
+  background-color: rgb(167, 196, 212);
+}
+
+main {
+  min-height: 100vh;
+  background-color: rgb(216, 213, 213);
+  background-color: rgb(167, 196, 212);
+}
+
+#promoteBack {
+  cursor: pointer;
+}
+
+#backButton {
+  background-color: rgb(193, 191, 191);
+  color: white;
+  width: 100px;
+  border-radius: 3px;
+  padding: 4px;
+  border: none;
+  font-size: 20px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.lastSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 10px;
+  color: white;
+  gap: 20px;
+  list-style-type: none;
+  font-size: 18px;
+  height: 3vh;
+}
+
+a, a:visited, a:focus {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+a:hover {
+  color: rgb(233, 232, 232);
+}
+
+.midSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  flex-wrap: wrap;
+  margin: auto;
+  height: 100vh;
+}
+.midSection div p, .midSection div h2 {
+  text-align: center;
+  font-weight: 600;
+}
+.midSection div p {
+  color: rgb(56, 56, 56);
+}
+
+.midSection img {
+  height: 200px;
+}
+
+@media screen and (max-width: 940px) {
+  nav {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  img {
+    margin-top: 20px;
+  }
+  ul {
+    justify-content: center;
+  }
+}/*# sourceMappingURL=advisors.css.map */

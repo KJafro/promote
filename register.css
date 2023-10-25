@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+}
+
+main {
+  display: flex;
+  min-height: 100vh;
+}
+
+a, a:visited, a:focus {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+a:hover {
+  color: rgb(233, 232, 232);
+}
+
+.left {
+  flex: 1;
+  background-color: rgb(211, 211, 211);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.left h1 {
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  flex: 1;
+  background-color: rgb(246, 246, 246);
+}
+.right h1 {
+  font-size: 32px;
+}
+.right form {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: center;
+}
+.right form p {
+  margin-top: 20px;
+  font-size: 18px;
+}
+.right form input {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid gray;
+  background-color: inherit;
+}
+.right form input:focus {
+  border: none;
+  outline: none;
+}
+.right form select {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  background-color: inherit;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.right form select:focus {
+  border: none;
+  outline: none;
+}
+.right form button {
+  padding: 14px;
+  margin-top: 20px;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  border-radius: 3px;
+  border: none;
+  font-size: 15px;
+}
+.right form button:hover {
+  background-color: rgb(77, 175, 77);
+}
+
+#registerError, #registerError2, #success {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    flex-direction: column;
+  }
+  .left {
+    flex: 2;
+  }
+}
+@media screen and (max-width: 400px) {
+  .right form {
+    width: 75%;
+  }
+}/*# sourceMappingURL=register.css.map */
