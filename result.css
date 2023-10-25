@@ -13,8 +13,8 @@ main {
   color: white;
   background-image: linear-gradient(
     to right,
-    rgb(222, 228, 233),
-    rgb(132, 139, 146)
+    rgb(96, 158, 210),
+    rgb(38, 88, 139)
   );
 }
 
