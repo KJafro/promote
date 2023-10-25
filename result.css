@@ -11,10 +11,16 @@ main {
   min-height: 100vh;
   text-align: center;
   color: white;
-  background-image: linear-gradient(to right, rgb(47, 130, 193), rgb(47, 130, 219));
+  background-image: linear-gradient(
+    to right,
+    rgb(47, 130, 193),
+    rgb(47, 130, 219)
+  );
 }
 
-a, a:visited, a:focus {
+a,
+a:visited,
+a:focus {
   text-decoration: inherit;
   color: inherit;
 }
@@ -35,7 +41,8 @@ a:hover {
   margin: auto;
   height: 50%;
 }
-.midSectionResults #wrong, .midSectionResults #clap {
+.midSectionResults #wrong,
+.midSectionResults #clap {
   display: none;
 }
 
@@ -61,7 +68,8 @@ a:hover {
   flex-direction: column;
   width: 30%;
 }
-.bottomSectionResults input, .bottomSectionResults select {
+.bottomSectionResults input,
+.bottomSectionResults select {
   outline: none;
   text-align: center;
   margin-top: 5px;
@@ -92,4 +100,12 @@ h1 {
   main {
     flex-direction: column;
   }
-}/*# sourceMappingURL=result.css.map */
+}
+
+@media screen and (max-width: 600px) {
+  .midSectionResults img {
+    height: 20%;
+  }
+}
+
+/*# sourceMappingURL=result.css.map */
